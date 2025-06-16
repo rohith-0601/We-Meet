@@ -15,8 +15,9 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Videomeet.css";
 import IconButton from "@mui/material/IconButton";
 import Badge from "@mui/material/Badge";
+import server from "../../environment";
 
-const server_url = "http://localhost:5001";
+const server_url = server.prod;
 
 var connections = {};
 const peerconfigConnections = {

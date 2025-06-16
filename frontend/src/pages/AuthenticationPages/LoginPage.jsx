@@ -3,6 +3,7 @@ import Squares from "./Squares";
 import "./LoginPage.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import server from "../../environment";
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ function LoginPage() {
   const handlesubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5001/api/v1/users/login", {
+      const res = await axios.post(`${server.prod}/api/v1/users/login`, {
         username,
         password,
       });
