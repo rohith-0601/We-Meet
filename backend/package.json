@@ -4,9 +4,9 @@
   "main": "src/app.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon backend/app.js",
-    "start": "node backend/app.js",
-    "prod": "pm2 backend/app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "prod": "pm2 app.js"
   },
   "keywords": [],
   "author": "Rohith Perugu",
