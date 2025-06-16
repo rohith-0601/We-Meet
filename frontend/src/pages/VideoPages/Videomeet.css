@@ -1,0 +1,90 @@
+.meetVideocontainer {
+  position: relative;
+  min-height: 100vh;
+  padding: 3rem 0;
+  background: linear-gradient(-45deg, #1FA848, white, #1FA848, white);
+  background-size: 400% 400%;
+  animation: gradientMove 30s ease infinite;
+}
+
+.conferenceview {
+  width: 400px;
+  height: 300px;
+  float: left;
+  margin: 5px;
+}
+
+.conferenceview video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.meetVideocontainer > .meetuservideo {
+  position: fixed;
+  height: 20vh;
+  width: auto;
+  bottom: 10vh;
+  left: 10px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.buttoncontainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 0;
+}
+
+.buttoncontainer svg {
+  font-size: 3rem;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .conferenceview {
+    width: 90vw;
+    height: 90vw;
+  }
+}
+
+.chatroom{
+    position: absolute;
+    height: 90vh;
+    width: 30vw;
+    right: 10px;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 0;
+    padding-inline: 20px;
+    top: 1rem;
+}
+
+.chat-container{
+    position: relative;
+    height: 100%;
+    padding: 1rem;
+}
+.chatting-area{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+

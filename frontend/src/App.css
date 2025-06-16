@@ -1,0 +1,23 @@
+/* Make sure body and html take up the full viewport and have no scrollbars */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* You can keep this if you want to style your particles container or future content */
+.particles-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Remove unnecessary styles from template */
+.logo,
+.card,
+.read-the-docs {
+  display: none;
+}
